@@ -1,14 +1,14 @@
 {
-  "name": "珍珠輪班行事曆",
-  "short_name": "珍珠行事曆",
+  "name": "珍珠輪班行事曆｜法式洛可可花園版",
+  "short_name": "珍珠輪班",
   "start_url": "./index.html",
   "display": "standalone",
-  "background_color": "#fdf3f5",
-  "theme_color": "#fceef2",
+  "background_color": "#fcf8fb",
+  "theme_color": "#c8a7c9",
   "icons": [
     {
       "src": "icon.svg",
-      "sizes": "512x512",
+      "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "any maskable"
     }
