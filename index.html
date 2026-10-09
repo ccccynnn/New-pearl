@@ -110,6 +110,30 @@ header{border-bottom:1px solid #d9c3a0;background:linear-gradient(110deg,#fffaf1
 .btn.primary{background:linear-gradient(105deg,#b89abd,#d9b5c9 55%,#c6a7cf);box-shadow:0 4px 12px #a987b62b}
 @media(max-width:390px){.brand:after{font-size:11px;letter-spacing:2px}.card:after{font-size:21px}}
 
+
+/* Actual decorative integration: French rococo garden ornaments */
+:root{--rococo-gold:#c7a66d;--rococo-rose:#d7a8b7;--rococo-ivory:#fffaf2}
+body{background-color:#fbf4f1;background-image:radial-gradient(ellipse at 10% 0%,#fffdf9 0,transparent 40%),radial-gradient(ellipse at 100% 24%,#ead9ef 0,transparent 33%),radial-gradient(ellipse at 0 70%,#f8e0e8 0,transparent 34%),url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cg fill='none' stroke='%23d5b986' stroke-opacity='.22' stroke-width='1'%3E%3Cpath d='M0 24 Q18 3 30 24 T60 24 T90 24 T120 24 M0 96 Q18 75 30 96 T60 96 T90 96 T120 96'/%3E%3Cpath d='M24 0 Q3 18 24 30 T24 60 T24 90 T24 120 M96 0 Q75 18 96 30 T96 60 T96 90 T96 120'/%3E%3C/g%3E%3C/svg%3E"),linear-gradient(145deg,#fffaf5,#f8edf7 58%,#fff7f0)}
+header{border-bottom:1px solid #d9bf91;box-shadow:0 3px 14px #b99c7520;background:linear-gradient(100deg,#fffaf3f5,#fff5f9f5,#f7effaf5)}
+header:after{content:'✧  ❦  ✧  ♡  ✧';display:block;text-align:right;color:#b99a66;font-size:13px;letter-spacing:5px;margin-top:5px;pointer-events:none}
+.brand{position:relative}.logo{border:1px solid #d8bb8b;outline:1px solid #ead8bb;outline-offset:3px;box-shadow:0 3px 12px #bda5c244,inset 0 0 0 2px #fff8f2}
+.card{border:1px solid #dfc79f;border-radius:24px;background:linear-gradient(145deg,#fffdf8f5,#fff8f8f2 68%,#fbf4ff);box-shadow:0 7px 22px #8b63821a,inset 0 0 0 2px #fffaf5;}
+.card:before{width:18px;height:18px;right:14px;top:12px;box-shadow:0 0 0 2px #fff8f3,0 2px 6px #c6a2cb55}
+/* corner flower sprays, deliberately outside content area */
+.card:after{content:'❀';position:absolute;left:8px;top:4px;font-size:20px;line-height:1;color:#c9a66e;text-shadow:10px 7px 0 #d8a9ba,18px 18px 0 #c5b2d5;opacity:.72;pointer-events:none}
+.monthbar{position:relative;padding-top:7px;padding-bottom:9px;border-bottom:1px solid #dfc79f}
+.monthbar:after{content:'❦  ───────  ✧  ───────  ❦';position:absolute;bottom:-10px;left:50%;transform:translateX(-50%);font-size:10px;letter-spacing:1px;white-space:nowrap;color:#c2a36e;background:#fffaf7;padding:0 8px}
+.iconbtn,.todaybtn{border-color:#dcc49b;background:linear-gradient(145deg,#fffdf9,#f8edf5);box-shadow:0 2px 6px #b89a7520}
+.cell{background:rgba(255,252,249,.88);border-color:#eadfe2;position:relative}.cell:nth-child(7n+1):after{content:'✧';position:absolute;bottom:2px;left:4px;font-size:9px;color:#d5b982;opacity:.55;pointer-events:none}.cell.sel{outline:2px solid #c49acb;box-shadow:inset 0 0 0 2px #fff7f0}.cell.today .num{box-shadow:0 0 0 2px #fff8ed,0 0 0 3px #c7a66d}
+.pill{border-radius:999px;box-shadow:inset 0 1px 0 #ffffffb0}
+.summary,.mood-grid,textarea,.btnrow,.legend,.rule,.phaseitem,.statsrow{position:relative;z-index:1}
+textarea{border-color:#dfc79f;background:#fffdf9}
+.btn.primary{background:linear-gradient(110deg,#b89abf,#d7afc5 52%,#c4a5ce);box-shadow:0 4px 10px #b99ac344}
+.mood{border-color:#e1cba5;background:linear-gradient(145deg,#fffdf9,#fff5fa);box-shadow:inset 0 0 0 1px #fff}
+.bottomnav{border-top:1px solid #d9bf91;background:linear-gradient(100deg,#fffaf3f5,#fff4f9f5,#f7effaf5);box-shadow:0 -4px 16px #b99c7520}
+.bottomnav:before{content:'❦ ───────── ✧ ───────── ❦';position:absolute;top:-10px;left:0;right:0;text-align:center;font-size:10px;letter-spacing:2px;color:#c7a66d;pointer-events:none}
+@media(min-width:600px){.card:after{font-size:25px}}
+
 </style></head>
 <body>
 <header><div class="brand"><span class="logo">♕</span><span>珍珠輪班行事曆<div class="subtitle">PEARL SHIFT CALENDAR</div></span></div></header>
