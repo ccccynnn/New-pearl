@@ -35,6 +35,16 @@ textarea{border-radius:16px;border-color:#eadce9}.btn{border-radius:14px;backgro
 .rule{border:1px solid #eee3ef;border-radius:16px}.rule.night{background:linear-gradient(120deg,#f5f4ff,#eeedff)}.rule.day{background:linear-gradient(120deg,#fffaf0,#fff3d5)}.phaseitem{border-radius:18px;background:linear-gradient(110deg,#fff,#fcf6fd);box-shadow:0 4px 12px #9e7ca00a}.countdown{background:linear-gradient(120deg,#f7eaf8,#eee0f4);border:1px solid #ead8ed;border-radius:10px}.bar{background:#f0e7f1}.fill.night{background:linear-gradient(90deg,#a3a4ef,#7779d4)}.fill.day{background:linear-gradient(90deg,#f6d98c,#d5a53d)}.bottomnav{background:#fffafcf5;backdrop-filter:blur(18px);box-shadow:0 -5px 20px #96739a0a}.bottomnav button.active{color:#9874a3}
 @media(min-width:600px){.cell{min-height:86px;padding:7px}.pill{font-size:12px}.wrap{padding:20px}}@media(max-width:370px){.cell{min-height:65px;padding:3px 1px}.pill{font-size:9px}.mood-grid{gap:3px}.mood{font-size:19px}.mood small{font-size:8px}}
 
+
+/* Visible pearl ornaments fix v2 */
+body:before{z-index:4;top:104px;right:12px;content:"✧  ·  ✦  ·  ✧";color:#b28bbd;font-size:17px;letter-spacing:3px;opacity:.72;text-shadow:0 1px 8px #fff;pointer-events:none}
+.card{overflow:hidden}
+.card:before{content:"";position:absolute;display:block;z-index:3;top:12px;right:13px;width:25px;height:25px;border-radius:50%;background:radial-gradient(circle at 28% 22%,#fff 0 9%,#fff 15%,#f8effa 38%,#e4d1eb 72%,#c6a8d0 100%);box-shadow:inset -2px -3px 5px #b18db833,0 3px 9px #a78bae35;pointer-events:none}
+.card:after{content:"✧";position:absolute;z-index:3;top:13px;right:43px;color:#c5a1ce;font-size:15px;text-shadow:0 1px 5px #e7d2ed;pointer-events:none}
+.card h2{padding-right:56px}
+header{border-bottom:1px solid #f0e3f0}
+.logo{border:1px solid #f0e3f1}
+
 </style></head>
 <body>
 <header><div class="brand"><span class="logo">♕</span><span>珍珠輪班行事曆<div class="subtitle">PEARL SHIFT CALENDAR</div></span></div></header>
