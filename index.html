@@ -6,9 +6,9 @@
 <meta name="theme-color" content="#b89ab9">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
-<meta name="apple-mobile-web-app-title" content="珍珠輪班日曆">
+<meta name="apple-mobile-web-app-title" content="Cyn’s work calendar">
 <link rel="manifest" href="manifest.json"><link rel="apple-touch-icon" href="icon.svg">
-<title>珍珠輪班日曆</title>
+<title>*･゜ﾟ･*:.｡..｡.:* Cyn’s work calendar*:.｡. .｡.:*･゜ﾟ･*</title>
 <style>
 :root{--ink:#59475f;--muted:#9b879e;--line:#eaddea;--bg:#fbf4f8;--night:#7f83d9;--nightbg:#e7e7fb;--day:#d7a63f;--daybg:#fff0c9;--off:#54ad8b;--offbg:#e0f5e9}
 *{box-sizing:border-box}body{margin:0;color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"PingFang TC",sans-serif;background:radial-gradient(ellipse at 10% 0%,#fff,transparent 42%),radial-gradient(ellipse at 100% 18%,#f1e2f2,transparent 36%),linear-gradient(145deg,#fbf5f8,#f6effb 55%,#fff8f3);padding-bottom:calc(78px + env(safe-area-inset-bottom))}
@@ -61,6 +61,9 @@ header{background:linear-gradient(105deg,#fffaf2f5,#fff4f7f7 48%,#f5ecf8f7);bord
 /* Ornate corners on the calendar and content panels */
 .card{background-image:radial-gradient(circle at 13px 13px,#c9ad76 0 1px,transparent 2px),radial-gradient(circle at calc(100% - 13px) 13px,#c9ad76 0 1px,transparent 2px),radial-gradient(circle at 13px calc(100% - 13px),#c9ad76 0 1px,transparent 2px),radial-gradient(circle at calc(100% - 13px) calc(100% - 13px),#c9ad76 0 1px,transparent 2px),linear-gradient(145deg,#fffdf8f7,#fff7fbf7 58%,#fbf4fcf7)}
 .monthbar strong{font-family:Georgia,"PingFang TC",serif;color:#6d506b;letter-spacing:.08em}
+.brand-title{font-family:Georgia,"PingFang TC",serif;color:#6d506b;letter-spacing:.02em;font-size:clamp(11px,2.7vw,17px);line-height:1.45;overflow-wrap:anywhere;display:block;padding-right:2px}
+.brand-title .subtitle{font-family:inherit;letter-spacing:.08em}
+@media(max-width:390px){.brand-title{font-size:10px;letter-spacing:0}.brand{gap:9px}.brand .logo{flex:0 0 42px}}
 .iconbtn,.todaybtn{border-color:#e4d0d9;background:linear-gradient(145deg,#fffdf9,#f7eaf1);box-shadow:inset 0 1px 0 #fff,0 2px 5px #b99bab12}
 .weekdays div{color:#a27f9e}
 .grid{border-radius:9px;border:1px solid #eadce4;background:#fffaf7;box-shadow:inset 0 0 0 2px #fff}
@@ -112,7 +115,7 @@ header{border-bottom:1px solid #d9c3a0;background:linear-gradient(110deg,#fffaf1
 
 </style></head>
 <body>
-<header><div class="brand"><span class="logo">♕</span><span>珍珠輪班行事曆<div class="subtitle">PEARL SHIFT CALENDAR</div></span></div></header>
+<header><div class="brand"><span class="logo">♕</span><span class="brand-title">*･゜ﾟ･*:.｡..｡.:* Cyn’s work calendar*:.｡. .｡.:*･゜ﾟ･*</span></div></header>
 <main class="wrap">
 <section class="page active" id="page-calendar"><div class="card"><div class="monthbar"><button class="iconbtn" id="prev">‹</button><strong id="monthLabel"></strong><button class="iconbtn" id="next">›</button><button class="todaybtn" id="today">今天</button></div><div class="weekdays"><div>日</div><div>一</div><div>二</div><div>三</div><div>四</div><div>五</div><div>六</div></div><div class="grid" id="grid"></div><div class="legend"><span><i class="dot day"></i>日班</span><span><i class="dot night"></i>夜班</span><span><i class="dot off"></i>休假</span></div></div>
 <div class="card"><h2>當日排班</h2><div class="summary"><div class="bigicon night" id="detailIcon">☾</div><div class="summarymain"><strong id="detailTitle">夜班</strong><small id="detailDate"></small></div></div><div class="dateinfo" id="detailPhase"></div></div>
