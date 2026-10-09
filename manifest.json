@@ -1,0 +1,16 @@
+{
+  "name": "珍珠輪班行事曆｜粉紫精緻升級版",
+  "short_name": "珍珠輪班",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#fcf8fb",
+  "theme_color": "#c3a6c9",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
