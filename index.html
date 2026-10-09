@@ -45,6 +45,41 @@ body:before{z-index:4;top:104px;right:12px;content:"✧  ·  ✦  ·  ✧";color
 header{border-bottom:1px solid #f0e3f0}
 .logo{border:1px solid #f0e3f1}
 
+
+/* French Rococo Garden edition — ornamental treatment */
+:root{--rococo-gold:#b79a63;--rococo-pink:#f2dce2;--rococo-cream:#fffaf2;--rococo-lilac:#d9c2df}
+body{background-color:#f9edf0;background-image:radial-gradient(ellipse at 8% 8%,#fffaf2 0 8%,transparent 35%),radial-gradient(ellipse at 94% 24%,#ead9ef 0 3%,transparent 31%),radial-gradient(ellipse at 3% 66%,#f3dfe4 0 5%,transparent 29%),linear-gradient(135deg,#f9eef0,#f4e9f5 48%,#fff8ed)}
+body:before{content:"✧  ❀  ✧     ❦     ✧  ❀  ✧";position:fixed;z-index:0;top:115px;right:8px;left:8px;text-align:center;font-family:Georgia,serif;font-size:14px;letter-spacing:5px;color:#b99aaf;opacity:.66;pointer-events:none;text-shadow:0 1px 4px #fff}
+header{background:linear-gradient(105deg,#fffaf2f5,#fff4f7f7 48%,#f5ecf8f7);border-bottom:1px solid #e7d3d2;box-shadow:0 4px 18px #9d7b7a12}
+.brand{position:relative}.brand:after{content:"❦  ·  ✧  ·  ❦";position:absolute;right:2px;top:-5px;font-family:Georgia,serif;font-size:13px;color:#b89a68;letter-spacing:2px;opacity:.85}
+.logo{border:1px solid #e7d2d9;background:radial-gradient(circle at 28% 20%,#fff 0 8%,transparent 30%),linear-gradient(145deg,#fffaf5,#efd9e7 55%,#d9c5e2);color:#a8899f;box-shadow:inset 0 1px 3px #fff,0 5px 15px #b99bb72c}
+.wrap{padding-top:20px}
+.card{border:1px solid #e4cfd6;border-radius:25px;background:linear-gradient(145deg,#fffdf8f7,#fff7fbf7 58%,#fbf4fcf7);box-shadow:0 8px 24px #9c76851b,inset 0 0 0 3px #fff8f3;position:relative}
+.card:before{content:"";position:absolute;z-index:3;top:12px;right:13px;width:25px;height:25px;border-radius:50%;background:radial-gradient(circle at 28% 22%,#fff 0 9%,#fff 15%,#f9f0f7 37%,#e7d7ec 70%,#c9aecf 100%);box-shadow:inset -2px -3px 5px #b18db833,0 3px 9px #a78bae35;pointer-events:none}
+.card:after{content:"❧";position:absolute;z-index:2;top:10px;right:42px;font-family:Georgia,serif;font-size:23px;line-height:1;color:#c1a06b;text-shadow:0 1px 1px white;opacity:.88;pointer-events:none}
+.card h2{padding-right:62px;position:relative}
+/* Ornate corners on the calendar and content panels */
+.card{background-image:radial-gradient(circle at 13px 13px,#c9ad76 0 1px,transparent 2px),radial-gradient(circle at calc(100% - 13px) 13px,#c9ad76 0 1px,transparent 2px),radial-gradient(circle at 13px calc(100% - 13px),#c9ad76 0 1px,transparent 2px),radial-gradient(circle at calc(100% - 13px) calc(100% - 13px),#c9ad76 0 1px,transparent 2px),linear-gradient(145deg,#fffdf8f7,#fff7fbf7 58%,#fbf4fcf7)}
+.monthbar strong{font-family:Georgia,"PingFang TC",serif;color:#6d506b;letter-spacing:.08em}
+.iconbtn,.todaybtn{border-color:#e4d0d9;background:linear-gradient(145deg,#fffdf9,#f7eaf1);box-shadow:inset 0 1px 0 #fff,0 2px 5px #b99bab12}
+.weekdays div{color:#a27f9e}
+.grid{border-radius:9px;border:1px solid #eadce4;background:#fffaf7;box-shadow:inset 0 0 0 2px #fff}
+.cell{background:linear-gradient(145deg,#fffdf9,#fff8fb);border-right:1px solid #eadce4;border-bottom:1px solid #eadce4;position:relative}
+.cell:nth-child(7n+1):after{content:"✧";position:absolute;left:3px;bottom:2px;color:#c6a66f;font-size:8px;opacity:.48;pointer-events:none}
+.cell.sel{outline:2px solid #b994bd;background:linear-gradient(145deg,#f7eafa,#fff8f8)}
+.cell.today .num{background:linear-gradient(145deg,#d0b0d2,#a986b0);box-shadow:0 2px 8px #a98ab455}
+.pill{border-radius:12px;box-shadow:inset 0 1px 0 #ffffffb8}
+.pill.off{background:linear-gradient(135deg,#e8f6eb,#d6efdf);color:#377c65}.pill.night{background:linear-gradient(135deg,#f0eaff,#dfd9f5);color:#6f65a7}.pill.day{background:linear-gradient(135deg,#fff6dc,#f8e6b4);color:#98713a}
+.legend{border-top:1px solid #f0e1e5;padding-top:12px}
+.bigicon{border:1px solid #fff;box-shadow:inset 0 1px 0 #fff,0 4px 12px #bda2bd25}
+textarea{background:linear-gradient(145deg,#fffefa,#fff9fc);border-color:#e5d3dd;box-shadow:inset 0 1px 3px #b99bad0a}
+.btn{border-color:#e5d1dd;background:linear-gradient(145deg,#fffdf8,#f6e9f2);color:#96749b}.btn.primary{background:linear-gradient(105deg,#b59abb,#d5b6d0 55%,#c5a4c9);box-shadow:0 5px 14px #a987b62b}
+.mood{border-color:#e6d4df;background:linear-gradient(145deg,#fffdf8,#fbf1f7);box-shadow:inset 0 1px 0 #fff,0 3px 8px #b99bad0d}.mood.active{background:linear-gradient(145deg,#f8e7f0,#eadcf4);border-color:#bd9ac5;box-shadow:0 4px 12px #a786b42b}
+.phaseitem{border-color:#ead7de;background:linear-gradient(110deg,#fffdf8,#fbf0f7)}
+.bottomnav{background:linear-gradient(100deg,#fffaf3f7,#fff5faf7,#f6eef9f7);border-top:1px solid #e6d3dc;box-shadow:0 -5px 18px #96739a10}
+.bottomnav button.active{color:#9a729e}
+@media(max-width:390px){.brand:after{font-size:10px;right:0;top:-3px}.brand{gap:9px}.card:after{font-size:19px}}
+
 </style></head>
 <body>
 <header><div class="brand"><span class="logo">♕</span><span>珍珠輪班行事曆<div class="subtitle">PEARL SHIFT CALENDAR</div></span></div></header>
